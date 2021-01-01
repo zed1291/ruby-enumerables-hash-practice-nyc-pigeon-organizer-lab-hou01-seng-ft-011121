@@ -9,7 +9,7 @@ def nyc_pigeon_organizer data
   end
 
   data[:color].each do |color, names|
-    names.each { |name| pigeon_list[name][:color] << color}
+    names.each { |name| pigeon_list[name][:color] << "#{color}"}
 
   end
 
