@@ -14,11 +14,11 @@ def nyc_pigeon_organizer data
   end
 
   data[:gender].each do |genders, names|
-    names.each { |name| pigeon_list[name][:gender] << genders}
+    names.each { |name| pigeon_list[name][:gender] << "#{genders}"}
   end
 
   data[:lives].each do |locations, names|
-    names.each { |name| pigeon_list[name][:lives] << locations}
+    names.each { |name| pigeon_list[name][:lives] << "#{locations}"}
   end
 
   pigeon_list
