@@ -9,16 +9,6 @@ def nyc_pigeon_organizer data
   end
 
   data[:color].each do |color, names|
-    # {
-    #   :purple => ["Theo", "Peter Jr.", "Lucky"],
-    #   :grey => ["Theo", "Peter Jr.", "Ms. K"],
-    #   :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
-    #   :brown => ["Queenie", "Alex"]
-    # }
-    # pigeon_list["Theo"][:color] = ["purple", "grey"]
-
-    # puts color
-    # puts names
     names.each { |name| pigeon_list[name][:color] << color}
 
   end
@@ -31,5 +21,5 @@ def nyc_pigeon_organizer data
     names.each { |name| pigeon_list[name][:lives] << locations}
   end
 
-  return pigeon_list
+  pigeon_list
 end
